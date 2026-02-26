@@ -27,11 +27,12 @@ export default function RootLayout({
         >
           <SidebarProvider defaultOpen={true}>
             <SidebarLeft />
-            <div className='flex w-full flex-col'>
-              <div className='flex justify-between border-b-2 p-2'>
+            <div className='mx-auto flex w-5xl flex-col border-r border-l'>
+              <div className='flex items-center justify-between p-2'>
                 <SidebarTrigger className='cursor-col-resize' />
                 <ModeToggle />
               </div>
+              <hr />
               <main className='px-3.5 py-2'>{children}</main>
             </div>
           </SidebarProvider>
