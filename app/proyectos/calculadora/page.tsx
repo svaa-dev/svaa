@@ -1,3 +1,10 @@
+import { Calculator } from './components'
+
 export default function Page() {
-  return <div></div>
+  return (
+    <div>
+      <h1>Calculadora</h1>
+      <Calculator />
+    </div>
+  )
 }
